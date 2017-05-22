@@ -1,0 +1,137 @@
+/*
+Theme Name: Anirecs Theme
+Theme URI: none
+Author: Petronald Green
+Author URI: https://petronaldgreen.com/
+Description: With the loss of the original template I decided to make my own from scratch
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: anirecs-theme
+Tags: two-columns
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+    background-image: url(images/anirecs-header.jpg), url(images/anirecs-seamless.png);
+    background-repeat: no-repeat, repeat;
+}
+
+h2 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+h2 a:hover, h2 a:focus {
+    text-decoration: none;
+    color: #757575;
+}
+
+a {
+    color: #489ed5;
+}
+
+p {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+#header {
+    max-width: 1000px;
+}
+
+#logo {
+    content: url(images/anirecs-logo.png);
+}
+
+#page {
+    max-width: 1000px;
+    background-color: white;
+    padding: 30px 10px 10px 10px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+
+#main {
+    border-right: 1px solid #ededed;
+}
+
+#sidebar {
+    padding-left: 9px;
+    padding-right: 5px;
+}
+
+.post {
+    background-color: #ededed;
+    margin: 10px 0px;
+    padding: 10px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+
+.post-title {
+    padding-top: 10px;
+    padding-bottom: 18px;
+}
+
+.post-detail {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    color: #888888;
+    padding: 3px 0px;
+}
+
+.post-tags {
+    margin-top: 20px; !important;
+    border-top: 1px solid white;
+    color: #888888;
+    padding: 3px 0px;
+}
+
+.post img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.content p {
+    color: #757575;
+    font-size: 13px;
+    line-height: 170%;
+}
+
+
+/************ WIDGET SPECIFIC ***************/
+#sidebar .widget {
+    list-style-type: none;
+}
+
+#sidebar li {
+    list-style-type: none;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    padding: 1px 0;
+}
+
+#sidebar ul {
+    padding: 0;
+}
+
+#sidebar a {
+    color: #489ed5;
+}
+
+.widgettitle {
+    color: #888888;
+    background-color: #ededed;
+    margin: 5px 0 10px -10px;
+    font-size: 13px;
+    padding: 8px
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e75cddf6-c792-4f54-b3c7-41a82162cffd" name="Local Anirecs" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="C:\xampp\htdocs\wordpress\wp-content\themes\anirecs-theme" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
