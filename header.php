@@ -13,13 +13,19 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.12.4.min.js"></script>
+
 	<?php wp_head(); ?>
 </head>
 <body>
 
 <div id="header" class="container">
     <!-- Logo + Carousel --->
-    <div id="logo"></div>
+    <a href="<?php echo home_url() ?>"> <div id="logo"></div></a>
 
 	<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+
 </div>
+
+<div id="slider" class="container"><?php dynamic_sidebar('home_slide'); ?></div>
