@@ -4,11 +4,11 @@
 		<div class="row">
 			<div id="main" class="col-md-9">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-					<div class="single">
+					<div class="post">
 
-						<h2 class="single-title"><?php the_title(); ?></h2>
+						<h2 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-						<small><p class="single-detail">
+						<small><p class="post-detail">
 								<?php the_time('F jS, Y'); ?> in <?php the_category( ', ' ); ?> by <?php the_author_posts_link(); ?>
 							</p></small>
 

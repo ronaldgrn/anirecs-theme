@@ -37,6 +37,8 @@ a {
 
 p {
     font-family: Verdana, Arial, Helvetica, sans-serif;
+
+    margin-bottom: 15px;
 }
 
 .container{
@@ -218,6 +220,12 @@ p {
 .nav-responsive-icon:hover, .nav-responsive-icon:focus, .nav-responsive-icon:active {
     text-decoration: none;
     color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #slider-content {
+        display: none;
+    }
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */

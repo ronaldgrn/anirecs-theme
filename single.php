@@ -2,7 +2,12 @@
 
 	<div id="page" class="container">
 		<div class="row">
-			<div id="main" class="col-md-9">
+			<div id="single-author" class="col-md-1">
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<small><?php echo get_avatar( get_the_author_meta( 'ID' ), 50 ); ?><br />by <?php the_author_posts_link(); ?></small>
+				<?php endwhile; endif; ?>
+			</div>
+			<div id="main" class="col-md-8">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<div class="single">
 

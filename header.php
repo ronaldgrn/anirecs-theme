@@ -28,4 +28,9 @@
 
 </div>
 
-<div id="slider" class="container"><?php dynamic_sidebar('home_slide'); ?></div>
+
+<div id="slider" class="container">
+	<?php if(is_home()): ?>
+        <div id="slider-content"> <?php dynamic_sidebar('home_slide'); ?></div>
+    <?php endif; ?>
+</div>

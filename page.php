@@ -8,10 +8,6 @@
 
 						<h2 class="single-title"><?php the_title(); ?></h2>
 
-						<small><p class="single-detail">
-								<?php the_time('F jS, Y'); ?> in <?php the_category( ', ' ); ?> by <?php the_author_posts_link(); ?>
-							</p></small>
-
 						<div class="content"><?php the_content(); ?></div>
 
 						<small><p class="post-tags">
