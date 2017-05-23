@@ -65,7 +65,7 @@ p {
 }
 
 #sidebar {
-    padding-left: 9px;
+    padding-left: 15px;
     padding-right: 5px;
 }
 
@@ -108,8 +108,8 @@ p {
 
 .post {
     background-color: #ededed;
-    margin: 10px 0px;
-    padding: 10px;
+    margin: 0 0 12px 0;
+    padding: 15px;
     -webkit-border-radius:6px;
     -moz-border-radius:6px;
     border-radius:6px;
@@ -137,6 +137,7 @@ p {
 
 .post img {
     max-width: 100%;
+    display: inline;
     width: auto;
     height: auto;
 }
@@ -147,6 +148,17 @@ p {
     line-height: 170%;
 }
 
+
+/************ BUILT IN *******************/
+.alignleft {
+    float: left;
+    margin: 5px 12px 2px 0;
+}
+
+.alignright {
+    float: right;
+    margin: 5px 12px 2px 0;
+}
 
 /************ WIDGET SPECIFIC ***************/
 .widget {
@@ -171,7 +183,7 @@ p {
 .widgettitle {
     color: #888888;
     background-color: #ededed;
-    margin: 5px 0 10px -10px;
+    margin: 5px 0 10px -15px;
     font-size: 13px;
     padding: 8px
 }
@@ -253,4 +265,11 @@ p {
         display: block;
         text-align: left;
     }
+}
+
+
+
+/************ Hide Built in elements **********/
+.widget_search .screen-reader-text{
+    display: none;
 }
