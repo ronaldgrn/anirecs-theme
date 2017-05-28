@@ -26,6 +26,10 @@
 				<?php endwhile; else : ?>
 					<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 				<?php endif; ?>
+
+                <hr />
+				<?php comments_template(); ?>
+
 			</div>
 			<div id="sidebar" class="col-md-3"><?php get_sidebar(); ?></div>
 		</div>
